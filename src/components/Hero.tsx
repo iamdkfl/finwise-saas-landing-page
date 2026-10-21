@@ -26,11 +26,24 @@ const Hero: React.FC = () => {
     신랑 마에다리쿠와 신부 김윤형의 결혼식을 축하합니다.
 </h1>
 
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
-                <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
-                </div>
+              
+<div className="mt-6 flex flex-col sm:flex-row items-center gap-4 w-fit mx-auto">
+
+    <a
+        href="#benefits"
+        className="flex items-center justify-center rounded-full bg-black px-8 py-4 text-white font-semibold hover:bg-gray-800 transition-colors"
+    >
+        ♡ 우리의 이야기
+    </a>
+
+    <a
+        href="#photos"
+        className="flex items-center justify-center rounded-full bg-black px-8 py-4 text-white font-semibold hover:bg-gray-800 transition-colors"
+    >
+        📷 사진 보러가기
+    </a>
+
+</div>
                 <Image
                     src={heroDetails.centerImageSrc}
                     width={384}
